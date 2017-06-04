@@ -29,6 +29,8 @@ To configure the JDBC storage plugin:
    Each configuration registered with Drill must have a distinct name. Names are case-sensitive.  
 
     {% include startnote.html %}The URL differs depending on your installation and configuration. See the [example configurations](#Example-Configurations) below for examples.{% include endnote.html %}  
+1. Update conf/drill-override.conf
+drill.exec.sys.store.provider.local.path = "mysql/postgresql/-connector-java-5.1.37-bin.jar"   --- however the jar name is    
 1. Click **Create**.  
 1. In Configuration, set the required properties using JSON formatting as shown in the following example. Change the properties to match your environment.  
 
